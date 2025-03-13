@@ -9,6 +9,7 @@
 
 ## 📸 Screenshots
 ![RotatingCube](/Screenshots/RotatingCube.png)
+![Earth-3D](/Screenshots//Earth-3D.png)
 
 ## 🚀 How to Run
 
