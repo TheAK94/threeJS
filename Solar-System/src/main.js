@@ -222,7 +222,7 @@ saturnGroup.add(saturnMesh);
 
 const ringGeometry = new THREE.CylinderGeometry(25, 52, 0.1, 128, 1, true); 
 const ringMaterial = new THREE.MeshBasicMaterial({
-    map: loader.load("/text/Saturn/ring.png"),
+    map: loader.load("/text/Saturn/saturnringcolor.jpg"),
     side: THREE.DoubleSide,
     transparent: true,
     opacity: 0.2,
@@ -230,6 +230,7 @@ const ringMaterial = new THREE.MeshBasicMaterial({
 });
 
 const ringMesh = new THREE.Mesh(ringGeometry, ringMaterial);
+ringMesh.rotation.x = Math.PI / 2;
 saturnGroup.add(ringMesh);
 
 
