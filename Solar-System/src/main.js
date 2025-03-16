@@ -442,6 +442,22 @@ function animate() {
         1200 * Math.sin(time * controls.neptuneSpeed)
     );
 
+    sunGroup.rotation.y += 0.0001;
+
+    // Rotate Planets
+    mercuryGroup.rotation.y += 0.0002;
+    venusGroup.rotation.y += 0.00005;
+    earthGroup.rotation.y += 0.01;
+    marsGroup.rotation.y += 0.0098;
+    jupiterGroup.rotation.y += 0.0242;
+    saturnGroup.rotation.y += 0.0224;
+    uranusGroup.rotation.y += 0.014;
+    neptuneGroup.rotation.y += 0.0149;
+
+    // Rotate Saturn's Rings
+    ringMesh.rotation.z += 0.0224;
+
+
     orbit.update();
     renderer.render(scene, camera);
 }
