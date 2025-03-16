@@ -29,7 +29,7 @@ scene.add(sunGroup);
 
 const sunGeometry = new THREE.IcosahedronGeometry(54, 10);
 const sunMaterial = new THREE.MeshBasicMaterial({
-  map: loader.load("./text/Sun/2k_sun.jpg")
+  map: loader.load("/text/Sun/2k_sun.jpg")
 });
 const sunMesh = new THREE.Mesh(sunGeometry, sunMaterial);
 sunGroup.add(sunMesh);
@@ -61,8 +61,8 @@ scene.add(mercuryGroup);
 
 const mercuryGeometry = new THREE.IcosahedronGeometry(4, 10);
 const mercuryMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Mercury/mercurymap.jpg"),
-  bumpMap: loader.load("./text/Mercury/mercurybump.jpg"),
+  map: loader.load("/text/Mercury/mercurymap.jpg"),
+  bumpMap: loader.load("/text/Mercury/mercurybump.jpg"),
   bumpScale: 0.1
 })
 const mercuryMesh = new THREE.Mesh(mercuryGeometry, mercuryMaterial);
@@ -76,8 +76,8 @@ scene.add(venusGroup);
 
 const venusGeometry = new THREE.IcosahedronGeometry(8, 10);
 const venusMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Venus/venusmap.jpg"),
-  bumpMap: loader.load("./text/Venus/venusbump.jpg"),
+  map: loader.load("/text/Venus/venusmap.jpg"),
+  bumpMap: loader.load("/text/Venus/venusbump.jpg"),
   bumpScale: 0.1
 })
 const venusMesh = new THREE.Mesh(venusGeometry, venusMaterial);
@@ -86,7 +86,7 @@ venusGroup.add(venusMesh);
 const venusAtmoMat = new THREE.MeshStandardMaterial({
   transparent: true,
   opacity: 0.5,
-  map: loader.load("./text/Venus/2k_venus_atmosphere.jpg"),
+  map: loader.load("/text/Venus/2k_venus_atmosphere.jpg"),
   blending: THREE.AdditiveBlending
 });
 const venusAtmoMesh = new THREE.Mesh(venusGeometry, venusAtmoMat);
@@ -102,9 +102,9 @@ scene.add(earthGroup);
 
 const earthGeometry = new THREE.IcosahedronGeometry(9, 10);
 const earthMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Earth/earthmap10k.jpg"),
-  normalMap: loader.load("./text/Earth/2k_earth_normal_map.jpg"),
-  metalnessMap: loader.load("./text/Earth/2k_earth_specular_map.jpg"),
+  map: loader.load("/text/Earth/earthmap10k.jpg"),
+  normalMap: loader.load("/text/Earth/2k_earth_normal_map.jpg"),
+  metalnessMap: loader.load("/text/Earth/2k_earth_specular_map.jpg"),
   metalness: 0.5,
   roughness: 0.6
 })
@@ -112,18 +112,18 @@ const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial);
 earthGroup.add(earthMesh);
 
 const earthLightsMat = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Earth/earthlights4k.jpg"),
+  map: loader.load("/text/Earth/earthlights4k.jpg"),
   blending: THREE.AdditiveBlending
 });
 const earthLightsMesh = new THREE.Mesh(earthGeometry, earthLightsMat);
 earthGroup.add(earthLightsMesh);
 
 const earthCloudsMat = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Earth/2k_earth_clouds.jpg"),
+  map: loader.load("/text/Earth/2k_earth_clouds.jpg"),
   transparent: true,
 	opacity: 0.8,
   blending: THREE.AdditiveBlending,
-  alphaMap: loader.load("./text/Earth/earthcloudmaptrans.jpg")
+  alphaMap: loader.load("/text/Earth/earthcloudmaptrans.jpg")
 });
 const earthCloudsMesh = new THREE.Mesh(earthGeometry, earthCloudsMat);
 earthCloudsMesh.scale.setScalar(1.01);
@@ -147,9 +147,9 @@ scene.add(marsGroup);
 
 const marsGeometry = new THREE.IcosahedronGeometry(5, 10);
 const marsMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Mars/mars_10k_color.jpg"),
-  normalMap: loader.load("./text/Mars/mars_6k_normal.jpg"),
-  bumpMap: loader.load("./text/Mars/mars_10k_topo.jpg"),
+  map: loader.load("/text/Mars/mars_10k_color.jpg"),
+  normalMap: loader.load("/text/Mars/mars_6k_normal.jpg"),
+  bumpMap: loader.load("/text/Mars/mars_10k_topo.jpg"),
   bumpScale: 0.08,
   roughness: 0.7
 });
@@ -175,7 +175,7 @@ scene.add(jupiterGroup);
 
 const jupiterGeometry = new THREE.IcosahedronGeometry(25, 10);
 const jupiterMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Jupiter/jupitermap.jpg"),
+  map: loader.load("/text/Jupiter/jupitermap.jpg"),
   roughness: 0.8,
   metalness: 0
 });
@@ -201,7 +201,7 @@ scene.add(saturnGroup);
 
 const saturnGeometry = new THREE.IcosahedronGeometry(22.5, 10);
 const saturnMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Saturn/saturnmap.jpg"),
+  map: loader.load("/text/Saturn/saturnmap.jpg"),
   roughness: 0.7,
   metalness: 0.1
 });
@@ -210,8 +210,8 @@ saturnGroup.add(saturnMesh);
 
 // const saturnRingGeometry = new THREE.RingGeometry(25, 52, 32);
 // const saturnRingMat = new THREE.MeshStandardMaterial({
-//   map: loader.load("./text/Saturn/saturnringcolor.jpg"),
-//   map: loader.load("./text/Saturn/ring.png"),
+//   map: loader.load("/text/Saturn/saturnringcolor.jpg"),
+//   map: loader.load("/text/Saturn/ring.png"),
 //   transparent: true,
 //   side: THREE.DoubleSide,
 //   blending: THREE.AdditiveBlending
@@ -222,7 +222,7 @@ saturnGroup.add(saturnMesh);
 
 const ringGeometry = new THREE.CylinderGeometry(25, 52, 0.1, 128, 1, true); 
 const ringMaterial = new THREE.MeshBasicMaterial({
-    map: loader.load("./text/Saturn/ring.png"),
+    map: loader.load("/text/Saturn/ring.png"),
     side: THREE.DoubleSide,
     transparent: true,
     opacity: 0.2,
@@ -240,14 +240,14 @@ scene.add(uranusGroup);
 
 const uranusGeometry = new THREE.IcosahedronGeometry(12.5, 10);
 const uranusMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Uranus/2k_uranus.jpg")
+  map: loader.load("/text/Uranus/2k_uranus.jpg")
 });
 const uranusMesh = new THREE.Mesh(uranusGeometry, uranusMaterial);
 uranusGroup.add(uranusMesh);
 
 const uranusRingGeometry = new THREE.RingGeometry(21, 21.5, 128);
 const uranusRingMat = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Uranus/uranusringcolour.jpg"),
+  map: loader.load("/text/Uranus/uranusringcolour.jpg"),
   transparent: true,
   side: THREE.DoubleSide
 });
@@ -264,7 +264,7 @@ scene.add(neptuneGroup);
 
 const neptuneGeometry = new THREE.IcosahedronGeometry(12, 10);
 const neptuneMaterial = new THREE.MeshStandardMaterial({
-  map: loader.load("./text/Neptune/2k_neptune.jpg")
+  map: loader.load("/text/Neptune/2k_neptune.jpg")
 });
 const neptuneMesh = new THREE.Mesh(neptuneGeometry, neptuneMaterial);
 neptuneGroup.add(neptuneMesh);

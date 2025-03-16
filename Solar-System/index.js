@@ -8,15 +8,15 @@ function hideLoadingScreen() {
   
   // Texture paths
   const texturePaths = [
-    "./text/Sun/2k_sun.jpg",
-    "./text/Mercury/mercurymap.jpg",
-    "./text/Venus/venusmap.jpg",
-    "./text/Earth/earthmap10k.jpg",
-    "./text/Mars/mars_10k_color.jpg",
-    "./text/Jupiter/jupitermap.jpg",
-    "./text/Saturn/saturnmap.jpg",
-    "./text/Uranus/2k_uranus.jpg",
-    "./text/Neptune/2k_neptune.jpg"
+    "/text/Sun/2k_sun.jpg",
+    "/text/Mercury/mercurymap.jpg",
+    "/text/Venus/venusmap.jpg",
+    "/text/Earth/earthmap10k.jpg",
+    "/text/Mars/mars_10k_color.jpg",
+    "/text/Jupiter/jupitermap.jpg",
+    "/text/Saturn/saturnmap.jpg",
+    "/text/Uranus/2k_uranus.jpg",
+    "/text/Neptune/2k_neptune.jpg"
   ];
   
   const loader = new THREE.TextureLoader();
