@@ -324,14 +324,14 @@ const controls = {
 
 const speedFolder = gui.addFolder('Planet Revolution Speeds');
 speedFolder.add(controls, 'speedFactor', 1, 100).name('Global Speed');
-speedFolder.add(controls, 'mercurySpeed', 0.001, 0.05);
-speedFolder.add(controls, 'venusSpeed', 0.001, 0.05);
-speedFolder.add(controls, 'earthSpeed', 0.001, 0.05);
-speedFolder.add(controls, 'marsSpeed', 0.001, 0.05);
-speedFolder.add(controls, 'jupiterSpeed', 0.001, 0.05);
-speedFolder.add(controls, 'saturnSpeed', 0.001, 0.05);
-speedFolder.add(controls, 'uranusSpeed', 0.001, 0.05);
-speedFolder.add(controls, 'neptuneSpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'mercurySpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'venusSpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'earthSpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'marsSpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'jupiterSpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'saturnSpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'uranusSpeed', 0.001, 0.05);
+// speedFolder.add(controls, 'neptuneSpeed', 0.001, 0.05);
 speedFolder.close();
 
 const helpersFolder = gui.addFolder('Helpers');
